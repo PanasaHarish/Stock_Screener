@@ -1,0 +1,184 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: white;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* =====================================================
+   HOME PAGE HEADER (Smart Screener + Search)
+   ===================================================== */
+.header {
+  margin-bottom: 24px;
+}
+
+/* Desktop only */
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+/* =====================================================
+   STOCK DETAIL TOP BAR (Back + Search)
+   ===================================================== */
+.top-bar {
+  margin-bottom: 14px;
+}
+
+/* Desktop only */
+@media (min-width: 1024px) {
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* =====================================================
+   SEARCH BAR
+   ===================================================== */
+.search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 420px;
+  background: #020617;
+  border-radius: 10px;
+  padding: 6px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.search-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+.search-bar input::placeholder {
+  color: #94a3b8;
+}
+
+.search-bar button {
+  background: #22c55e;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: #022c22;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #16a34a;
+}
+
+/* =====================================================
+   SECTIONS & CARDS
+   ===================================================== */
+.section {
+  margin-top: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.bullish {
+  color: #22c55e;
+}
+
+.bearish {
+  color: #ef4444;
+}
+
+/* =====================================================
+   SUMMARY CARD (PROFESSIONAL)
+   ===================================================== */
+.summary-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  background: linear-gradient(180deg, #1e293b, #162033);
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.summary-item .label {
+  font-size: 12px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.summary-item .value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+/* ✅ HIGH / LOW COLORS */
+.summary-item .value.high {
+  color: #22c55e; /* green */
+}
+
+.summary-item .value.low {
+  color: #ef4444; /* red */
+}
+/* ===== SYMBOL + EXCHANGE ROW ===== */
+.symbol-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* ===== NSE / BSE TOGGLE ===== */
+.exchange-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.exchange-toggle button {
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.exchange-toggle button.active {
+  background: #1e293b;
+  color: #22c55e;
+  border-color: #22c55e;
+}
