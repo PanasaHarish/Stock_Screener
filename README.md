@@ -43,24 +43,6 @@ The project demonstrates the integration of:
 
 ---
 
-## 🏗️ Project Architecture
-
-```text
-Stock_Screener/
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── ...
-│
-├── backend/
-│   └── ...
-│
-├── README.md
-└── ...
-```
-
 ### Frontend
 
 The frontend is responsible for:
